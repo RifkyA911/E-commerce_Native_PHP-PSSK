@@ -107,5 +107,9 @@ var searchData=
   ['sjis_5fwidths_104',['SJIS_widths',['../_c_j_kdata_8php.html#a309991a507cdc8b3151a23e2399eacd8',1,'CJKdata.php']]],
   ['standalone_5fcluster_105',['STANDALONE_CLUSTER',['../class_mpdf_1_1_shaper_1_1_indic.html#a2935ab04c4fbc4b1df176d09eb523b03',1,'Mpdf::Shaper::Indic']]],
   ['statistics_106',['STATISTICS',['../class_mpdf_1_1_log_1_1_context.html#a4e288eccd4ad1f3cf996e2620994a394',1,'Mpdf::Log::Context']]],
-  ['string_5freturn_107',['STRING_RETURN',['../class_mpdf_1_1_output_1_1_destination.html#a9d5332b9d7adc5def07b24033695904f',1,'Mpdf::Output::Destination']]]
+  ['std_5fline_5flength_107',['STD_LINE_LENGTH',['../class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#acb0f453ae60fbe80a1221065af681cdf',1,'PHPMailer::PHPMailer::PHPMailer']]],
+  ['stop_5fcontinue_108',['STOP_CONTINUE',['../class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#afd1dcd18845b2e660d89726b20cd566e',1,'PHPMailer::PHPMailer::PHPMailer']]],
+  ['stop_5fcritical_109',['STOP_CRITICAL',['../class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#a9f37e989efccad58c693cdb0481c881f',1,'PHPMailer::PHPMailer::PHPMailer']]],
+  ['stop_5fmessage_110',['STOP_MESSAGE',['../class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#a18ac47549c5fb56a395b374b3c23f04f',1,'PHPMailer::PHPMailer::PHPMailer']]],
+  ['string_5freturn_111',['STRING_RETURN',['../class_mpdf_1_1_output_1_1_destination.html#a9d5332b9d7adc5def07b24033695904f',1,'Mpdf::Output::Destination']]]
 ];

@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('md__c__xampp_htdocs__p_s_s_k_vendor_se
 <p >:heavy_exclamation_mark: This document refers to FPDI 2. Version 1 is deprecated and development is discontinued. :heavy_exclamation_mark:</p>
 <p >FPDI is a collection of PHP classes facilitating developers to read pages from existing PDF documents and use them as templates in <a href="http://www.fpdf.org">FPDF</a>, which was developed by Olivier Plathey. Apart from a copy of <a href="http://www.fpdf.org">FPDF</a>, FPDI does not require any special PHP extensions.</p>
 <p >FPDI can also be used as an extension for <a href="https://github.com/tecnickcom/TCPDF">TCPDF</a> or <a href="http://fpdf.org/en/script/script92.php">tFPDF</a>, too.</p>
-<h1><a class="anchor" id="autotoc_md2934"></a>
+<h1><a class="anchor" id="autotoc_md2954"></a>
 Installation with &lt;a href="https://packagist.org/packages/setasign/fpdi" &gt;Composer&lt;/a&gt;</h1>
 <p >Because FPDI can be used with FPDF, TCPDF or tFPDF we haven't added a fixed dependency in the main composer.json file. You need to add the dependency to the PDF generation library of your choice yourself.</p>
 <p >To use FPDI with FPDF include following in your composer.json file:</p>
@@ -113,14 +113,14 @@ Installation with &lt;a href="https://packagist.org/packages/setasign/fpdi" &gt;
 <div class="line">        &quot;setasign/fpdi&quot;: &quot;^2.3&quot;</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md2935"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md2955"></a>
 Manual Installation</h1>
 <p >If you do not use composer, just require the autoload.php in the /src folder:</p>
 <div class="fragment"><div class="line">require_once(<span class="stringliteral">&#39;src/autoload.php&#39;</span>);</div>
 </div><!-- fragment --><p >If you have a PSR-4 autoloader implemented, just register the src path as follows: </p><div class="fragment"><div class="line">$loader = new \Example\Psr4AutoloaderClass;</div>
 <div class="line">$loader-&gt;register();</div>
 <div class="line">$loader-&gt;addNamespace(<span class="stringliteral">&#39;setasign\Fpdi&#39;</span>, <span class="stringliteral">&#39;path/to/src/&#39;</span>);</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md2936"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md2956"></a>
 Changes to Version 1</h1>
 <p >Version 2 is a complete rewrite from scratch of FPDI which comes with:</p><ul>
 <li>Namespaced code</li>
@@ -142,7 +142,7 @@ Changes to Version 1</h1>
 <li>The return value of <code><a class="el" href="namespace_mpdf.html#a98dafb6b840982dca143561e66506c91">getTemplateSize()</a></code> had changed to an array with more speaking keys and reusability: Use <code>width</code> instead of <code>w</code> and <code>height</code> instead of <code>h</code>.</li>
 <li>If you want to use <b>FPDI with TCPDF</b> you need to refactor your code to use the class <code>Tcpdf\Fpdi</code> (since 2.1; before it was <code>TcpdfFpdi</code>) instead of <code>FPDI</code>.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md2937"></a>
+<h1><a class="anchor" id="autotoc_md2957"></a>
 Example and Documentation</h1>
 <p >A simple example, that imports a single page and places this onto a new created page:</p>
 <div class="fragment"><div class="line">&lt;?php</div>

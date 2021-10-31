@@ -2,9 +2,19 @@ var searchData=
 [
   ['cfar_0',['CFAR',['../class_mpdf_1_1_shaper_1_1_indic.html#ab383e03d9dd8fa6e5dd3551b3cd6f3bc',1,'Mpdf::Shaper::Indic']]],
   ['ch2r_1',['ch2r',['../fi_8php.html#af7e083b8e78722221462384ea3bc6522',1,'fi.php']]],
-  ['compressed_5fxref_2',['COMPRESSED_XREF',['../classsetasign_1_1_fpdi_1_1_pdf_parser_1_1_cross_reference_1_1_cross_reference_exception.html#a785b385ffdf636e132544a697c2d3377',1,'setasign::Fpdi::PdfParser::CrossReference::CrossReferenceException']]],
-  ['consonant_5fsyllable_3',['CONSONANT_SYLLABLE',['../class_mpdf_1_1_shaper_1_1_indic.html#a42de656b992b5fb8f32dd91a268418d6',1,'Mpdf\Shaper\Indic\CONSONANT_SYLLABLE()'],['../class_mpdf_1_1_shaper_1_1_myanmar.html#a42de656b992b5fb8f32dd91a268418d6',1,'Mpdf\Shaper\Myanmar\CONSONANT_SYLLABLE()'],['../class_mpdf_1_1_shaper_1_1_sea.html#a42de656b992b5fb8f32dd91a268418d6',1,'Mpdf\Shaper\Sea\CONSONANT_SYLLABLE()']]],
-  ['critical_4',['CRITICAL',['../class_psr_1_1_log_1_1_log_level.html#a5e924d1434e5b36fdc72dd03b1a8f744',1,'Psr::Log::LogLevel']]],
-  ['crop_5fbox_5',['CROP_BOX',['../classsetasign_1_1_fpdi_1_1_pdf_reader_1_1_page_boundaries.html#adf7f3b8a8ba0a457e2aeeb162b7245cc',1,'setasign::Fpdi::PdfReader::PageBoundaries']]],
-  ['css_5fsize_5fconversion_6',['CSS_SIZE_CONVERSION',['../class_mpdf_1_1_log_1_1_context.html#a54aecdda6d7e552ca38d817b4064e538',1,'Mpdf::Log::Context']]]
+  ['charset_5fascii_2',['CHARSET_ASCII',['../class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#a0b6e0adf18aa9932016d69eea28943d1',1,'PHPMailer::PHPMailer::PHPMailer']]],
+  ['charset_5fiso88591_3',['CHARSET_ISO88591',['../class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#a0ca19f88f77768940a379bf227df97ed',1,'PHPMailer::PHPMailer::PHPMailer']]],
+  ['charset_5futf8_4',['CHARSET_UTF8',['../class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#a7930f10eaa4ddefe78abd7be561dd117',1,'PHPMailer::PHPMailer::PHPMailer']]],
+  ['compressed_5fxref_5',['COMPRESSED_XREF',['../classsetasign_1_1_fpdi_1_1_pdf_parser_1_1_cross_reference_1_1_cross_reference_exception.html#a785b385ffdf636e132544a697c2d3377',1,'setasign::Fpdi::PdfParser::CrossReference::CrossReferenceException']]],
+  ['consonant_5fsyllable_6',['CONSONANT_SYLLABLE',['../class_mpdf_1_1_shaper_1_1_indic.html#a42de656b992b5fb8f32dd91a268418d6',1,'Mpdf\Shaper\Indic\CONSONANT_SYLLABLE()'],['../class_mpdf_1_1_shaper_1_1_myanmar.html#a42de656b992b5fb8f32dd91a268418d6',1,'Mpdf\Shaper\Myanmar\CONSONANT_SYLLABLE()'],['../class_mpdf_1_1_shaper_1_1_sea.html#a42de656b992b5fb8f32dd91a268418d6',1,'Mpdf\Shaper\Sea\CONSONANT_SYLLABLE()']]],
+  ['content_5ftype_5fmultipart_5falternative_7',['CONTENT_TYPE_MULTIPART_ALTERNATIVE',['../class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#a8da3471a3ef56c4142d5a0af18604da1',1,'PHPMailer::PHPMailer::PHPMailer']]],
+  ['content_5ftype_5fmultipart_5fmixed_8',['CONTENT_TYPE_MULTIPART_MIXED',['../class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#ada48110bd8b446fc1446b32c8a3a368d',1,'PHPMailer::PHPMailer::PHPMailer']]],
+  ['content_5ftype_5fmultipart_5frelated_9',['CONTENT_TYPE_MULTIPART_RELATED',['../class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#a9e1fecefcca33e663713cc6acc79aaf3',1,'PHPMailer::PHPMailer::PHPMailer']]],
+  ['content_5ftype_5fplaintext_10',['CONTENT_TYPE_PLAINTEXT',['../class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#a308abead10cbc53446fde94432fc4599',1,'PHPMailer::PHPMailer::PHPMailer']]],
+  ['content_5ftype_5ftext_5fcalendar_11',['CONTENT_TYPE_TEXT_CALENDAR',['../class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#abd235764c29a1ae6e958f17bee20a4e3',1,'PHPMailer::PHPMailer::PHPMailer']]],
+  ['content_5ftype_5ftext_5fhtml_12',['CONTENT_TYPE_TEXT_HTML',['../class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#abd52f36a6d09d0822e4fa15a8b5f3a78',1,'PHPMailer::PHPMailer::PHPMailer']]],
+  ['critical_13',['CRITICAL',['../class_psr_1_1_log_1_1_log_level.html#a5e924d1434e5b36fdc72dd03b1a8f744',1,'Psr::Log::LogLevel']]],
+  ['crlf_14',['CRLF',['../class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#aa8bdd4d85e1ba0db8c09f92688c27ca6',1,'PHPMailer::PHPMailer::PHPMailer']]],
+  ['crop_5fbox_15',['CROP_BOX',['../classsetasign_1_1_fpdi_1_1_pdf_reader_1_1_page_boundaries.html#adf7f3b8a8ba0a457e2aeeb162b7245cc',1,'setasign::Fpdi::PdfReader::PageBoundaries']]],
+  ['css_5fsize_5fconversion_16',['CSS_SIZE_CONVERSION',['../class_mpdf_1_1_log_1_1_context.html#a54aecdda6d7e552ca38d817b4064e538',1,'Mpdf::Log::Context']]]
 ];

@@ -4,7 +4,7 @@ var searchData=
   ['rainbow_2emd_1',['rainbow.md',['../rainbow_8md.html',1,'']]],
   ['random_2ephp_2',['random.php',['../random_8php.html',1,'']]],
   ['readerinterface_2ephp_3',['ReaderInterface.php',['../_reader_interface_8php.html',1,'']]],
-  ['readme_2emd_4',['README.md',['../vendor_2psr_2log_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../vendor_2bootstrap5_2icons_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../vendor_2mpdf_2mpdf_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../vendor_2myclabs_2deep-copy_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../vendor_2setasign_2fpdi_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)']]],
+  ['readme_2emd_4',['README.md',['../vendor_2psr_2log_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../vendor_2bootstrap5_2icons_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../vendor_2mpdf_2mpdf_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../vendor_2myclabs_2deep-copy_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../vendor_2phpmailer_2phpmailer_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../vendor_2setasign_2fpdi_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)']]],
   ['receipt_2dcutoff_2emd_5',['receipt-cutoff.md',['../receipt-cutoff_8md.html',1,'']]],
   ['receipt_2emd_6',['receipt.md',['../receipt_8md.html',1,'']]],
   ['reception_2d0_2emd_7',['reception-0.md',['../reception-0_8md.html',1,'']]],

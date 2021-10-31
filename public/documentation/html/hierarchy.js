@@ -74,6 +74,7 @@ var hierarchy =
     ] ],
     [ "ErrorHandler", "class_error_handler.html", null ],
     [ "Exception", null, [
+      [ "Exception", "class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_exception.html", null ],
       [ "FpdiException", "classsetasign_1_1_fpdi_1_1_fpdi_exception.html", [
         [ "PdfParserException", "classsetasign_1_1_fpdi_1_1_pdf_parser_1_1_pdf_parser_exception.html", [
           [ "CrossReferenceException", "classsetasign_1_1_fpdi_1_1_pdf_parser_1_1_cross_reference_1_1_cross_reference_exception.html", null ],
@@ -160,6 +161,7 @@ var hierarchy =
     [ "NamedColors", "class_mpdf_1_1_color_1_1_named_colors.html", null ],
     [ "NoProxyPattern", "class_no_proxy_pattern.html", null ],
     [ "NumericString", "class_mpdf_1_1_utils_1_1_numeric_string.html", null ],
+    [ "OAuth", "class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth.html", null ],
     [ "ObjectWriter", "class_mpdf_1_1_writer_1_1_object_writer.html", null ],
     [ "OptionalContentWriter", "class_mpdf_1_1_writer_1_1_optional_content_writer.html", null ],
     [ "Otl", "class_mpdf_1_1_otl.html", null ],
@@ -185,6 +187,8 @@ var hierarchy =
       [ "PdfString", "classsetasign_1_1_fpdi_1_1_pdf_parser_1_1_type_1_1_pdf_string.html", null ],
       [ "PdfToken", "classsetasign_1_1_fpdi_1_1_pdf_parser_1_1_type_1_1_pdf_token.html", null ]
     ] ],
+    [ "PHPMailer", "class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html", null ],
+    [ "POP3", "class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3.html", null ],
     [ "Protection", "class_mpdf_1_1_pdf_1_1_protection.html", null ],
     [ "ReaderInterface", "interfacesetasign_1_1_fpdi_1_1_pdf_parser_1_1_cross_reference_1_1_reader_interface.html", [
       [ "FixedReader", "classsetasign_1_1_fpdi_1_1_pdf_parser_1_1_cross_reference_1_1_fixed_reader.html", null ],
@@ -197,6 +201,7 @@ var hierarchy =
     ] ],
     [ "Sea", "class_mpdf_1_1_shaper_1_1_sea.html", null ],
     [ "ServiceFactory", "class_mpdf_1_1_service_factory.html", null ],
+    [ "SMTP", "class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p.html", null ],
     [ "StreamReader", "classsetasign_1_1_fpdi_1_1_pdf_parser_1_1_stream_reader.html", null ],
     [ "StreamWrapperChecker", "class_mpdf_1_1_file_1_1_stream_wrapper_checker.html", null ],
     [ "Svg", "class_mpdf_1_1_image_1_1_svg.html", null ],

@@ -60,7 +60,7 @@ ob_start();
                 <div class="col-6">
                     <div class="mb-3">
                         <label for="U_Username" class="form-label"><i class="fas fa-fw fa-user"></i> Tanggal</label>
-                        <input type="text" class="form-control" id="U_Username" value="<?= $u['tgl_input']; ?>">
+                        <input type="text" class="form-control" id="U_Username" value="<?= date("Y-m-d H:i:s"); ?>">
                     </div>
                     <div class="mb-3">
                         <label for="U_Username" class="form-label"><i class="fas fa-fw fa-user"></i> ID Paypal</label>
@@ -106,6 +106,10 @@ ob_start();
             </tbody>
         </table>
         <b>Total Belanja (*termasuk pajak Rp 2.500): <?= $total_harga = $total_harga + 2500; ?></b>
+    </div>
+    <div>
+        <br><br><br><br><br>
+        <p align="right" class="fw-bold" style="float: right;"><u>Tanda tangan toko</u></p>
     </div>
 </body>
 

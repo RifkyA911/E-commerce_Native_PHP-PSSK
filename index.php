@@ -3,7 +3,8 @@
 /**
  * Setiap halaman membutuhkan modul utama untuk menjalankan fungsi koneksi ke DB dan query function
  * <pre>require "conn.php";
- * require "__function/query_function.php";</pre>
+ * require "__function/query_function.php";
+ * session_start();</pre>
  */
 // import modul
 require "conn.php";
@@ -14,12 +15,6 @@ $items = get_all_data('item');
 $kategori = get_all_data('item_kategori');
 /// inisialisasi session untuk kredensial
 session_start();
-// debug tools
-// // Start the clock time in seconds 
-// $start_time = microtime(true);
-// $val = 1;
-// // memory
-// $big_array = array();
 ?>
 
 <!DOCTYPE html>
@@ -68,38 +63,13 @@ session_start();
                                                     </div>
                                                 </div>
                                             </a>
-                                            <?php //$big_array[] = $no;
-                                            //$val++;
+                                            <?php
+                                            /// melakukan penambahan value '$no' sebanyak 1 di setiap akhir foreach
                                             $no++; ?>
                                         </div>
                                     <?php
                                     /// stop looping
                                     endforeach;
-                                    // echo '<p>After building the array</p>';
-                                    // print_mem();
-
-                                    // unset($big_array);
-
-                                    // echo '<p>After unsetting the array</p>';
-                                    // print_mem();
-                                    // function print_mem()
-                                    // {
-                                    //     /* Currently used memory */
-                                    //     $mem_usage = memory_get_usage();
-
-                                    //     /* Peak memory usage */
-                                    //     $mem_peak = memory_get_peak_usage();
-
-                                    //     echo 'The script is now using: <strong>' . round($mem_usage / 1024) . 'KB</strong> of memory.<br>';
-                                    //     echo 'Peak usage: <strong>' . round($mem_peak / 1024) . 'KB</strong> of memory.<br><br>';
-                                    // }
-                                    // // End the clock time in seconds 
-                                    // $end_time = microtime(true);
-
-                                    // // Calculate the script execution time 
-                                    // $execution_time = ($end_time - $start_time);
-
-                                    // echo " It takes " . $execution_time . " seconds to execute the script";
                                     ?>
                                 </div>
                             </div>
@@ -116,10 +86,11 @@ session_start();
                                             <h6>Alat Kesehatan</h6>
                                             <div class="filter-form-group ps-1">
                                                 <!-- memanggil fungsi get_all_data() dari conn.php -->
-                                                <?php foreach ($kategori as $k) : ?>
+                                                <?php
+                                                foreach ($kategori as $k) : ?>
                                                     <div class="form-check pt-2">
                                                         <?php $name = str_replace(' ', '_', $k['kategori']); ?>
-                                                        <input class="form-check-input search_kategori" onclick="View_Kategori()" type="checkbox" value="<?= $k['kategori'] ?>" id="CBX_<?= $k['kategori'] ?>">
+                                                        <input class="form-check-input search_kategori" onclick="" data-id="<?= $k['id']; ?>" type="checkbox" value="<?= $k['kategori'] ?>" id="CBX_<?= $k['kategori'] ?>">
                                                         <label class="form-check-label" style="<?= $Mpointer; ?>" for="CBX_<?= $k['kategori'] ?>">
                                                             <?= ucwords($k['kategori']); ?>
                                                         </label>

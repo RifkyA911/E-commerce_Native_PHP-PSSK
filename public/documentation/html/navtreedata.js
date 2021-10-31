@@ -147,15 +147,40 @@ var NAVTREE =
         [ "Support", "md__c__xampp_htdocs__p_s_s_k_vendor_myclabs_deep_copy__r_e_a_d_m_e.html#autotoc_md2931", null ]
       ] ]
     ] ],
+    [ "README", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html", [
+      [ "PHPMailer – A full-featured email creation and transfer class for PHP", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2932", [
+        [ "Features", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2933", null ],
+        [ "Why you might need it", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2934", null ],
+        [ "License", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2935", null ],
+        [ "Installation & loading", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2936", null ],
+        [ "Legacy versions", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2937", [
+          [ "Upgrading from 5.2", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2938", null ],
+          [ "Minimal installation", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2939", null ]
+        ] ],
+        [ "A Simple Example", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2940", null ],
+        [ "Localization", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2941", null ],
+        [ "Documentation", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2942", null ],
+        [ "Tests", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2943", null ],
+        [ "Security", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2944", null ],
+        [ "Contributing", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2945", null ],
+        [ "Sponsorship", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2946", null ],
+        [ "PHPMailer For Enterprise", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2947", null ],
+        [ "Changelog", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2948", null ],
+        [ "History", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2949", [
+          [ "What's changed since moving from SourceForge?", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__r_e_a_d_m_e.html#autotoc_md2950", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "Security notices relating to PHPMailer", "md__c__xampp_htdocs__p_s_s_k_vendor_phpmailer_phpmailer__s_e_c_u_r_i_t_y.html", null ],
     [ "PSR Log", "md__c__xampp_htdocs__p_s_s_k_vendor_psr_log__r_e_a_d_m_e.html", [
-      [ "Installation", "md__c__xampp_htdocs__p_s_s_k_vendor_psr_log__r_e_a_d_m_e.html#autotoc_md2932", null ],
-      [ "Usage", "md__c__xampp_htdocs__p_s_s_k_vendor_psr_log__r_e_a_d_m_e.html#autotoc_md2933", null ]
+      [ "Installation", "md__c__xampp_htdocs__p_s_s_k_vendor_psr_log__r_e_a_d_m_e.html#autotoc_md2952", null ],
+      [ "Usage", "md__c__xampp_htdocs__p_s_s_k_vendor_psr_log__r_e_a_d_m_e.html#autotoc_md2953", null ]
     ] ],
     [ "FPDI - Free PDF Document Importer", "md__c__xampp_htdocs__p_s_s_k_vendor_setasign_fpdi__r_e_a_d_m_e.html", [
-      [ "Installation with <a href=\"https://packagist.org/packages/setasign/fpdi\" >Composer</a>", "md__c__xampp_htdocs__p_s_s_k_vendor_setasign_fpdi__r_e_a_d_m_e.html#autotoc_md2934", null ],
-      [ "Manual Installation", "md__c__xampp_htdocs__p_s_s_k_vendor_setasign_fpdi__r_e_a_d_m_e.html#autotoc_md2935", null ],
-      [ "Changes to Version 1", "md__c__xampp_htdocs__p_s_s_k_vendor_setasign_fpdi__r_e_a_d_m_e.html#autotoc_md2936", null ],
-      [ "Example and Documentation", "md__c__xampp_htdocs__p_s_s_k_vendor_setasign_fpdi__r_e_a_d_m_e.html#autotoc_md2937", null ]
+      [ "Installation with <a href=\"https://packagist.org/packages/setasign/fpdi\" >Composer</a>", "md__c__xampp_htdocs__p_s_s_k_vendor_setasign_fpdi__r_e_a_d_m_e.html#autotoc_md2954", null ],
+      [ "Manual Installation", "md__c__xampp_htdocs__p_s_s_k_vendor_setasign_fpdi__r_e_a_d_m_e.html#autotoc_md2955", null ],
+      [ "Changes to Version 1", "md__c__xampp_htdocs__p_s_s_k_vendor_setasign_fpdi__r_e_a_d_m_e.html#autotoc_md2956", null ],
+      [ "Example and Documentation", "md__c__xampp_htdocs__p_s_s_k_vendor_setasign_fpdi__r_e_a_d_m_e.html#autotoc_md2957", null ]
     ] ],
     [ "Security contact information", "md__c__xampp_htdocs__p_s_s_k_vendor_setasign_fpdi__s_e_c_u_r_i_t_y.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
@@ -185,7 +210,8 @@ var NAVTREE =
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", "globals_vars" ]
       ] ]
-    ] ]
+    ] ],
+    [ "Examples", "examples.html", "examples" ]
   ] ]
 ];
 
@@ -193,34 +219,41 @@ var NAVTREEINDEX =
 [
 "_1first.html",
 "_date_interval_filter_8php_source.html",
-"_hausa___07_latin_08___nigeria_8php.html",
-"_polish___poland_8php.html",
-"_tag_2_form_8php.html",
-"class_composer_1_1_autoload_1_1_class_loader.html#a8326a997d0cfe76d80196f60d240d144",
-"class_mpdf_1_1_barcode_1_1_postnet.html#a830b5c75df72b32396701bc563fbe3c7",
-"class_mpdf_1_1_fonts_1_1_font_cache.html#a0ae4c5c1f4c70575dbd103920a9eaa18",
-"class_mpdf_1_1_gif_1_1_file_header.html#abb8cc80a6812d7c5476d1eab3bade1cc",
-"class_mpdf_1_1_image_1_1_svg.html#a94559b9a8f2cf84a01f7a68e0bd5ec6e",
-"class_mpdf_1_1_mpdf.html#a18eefca0f96bebbc1f377d913878d1fd",
-"class_mpdf_1_1_mpdf.html#a3b5a1179b24abbc9be2a18eeda5ba297",
-"class_mpdf_1_1_mpdf.html#a648eeb3383b4355a9561dc478a85dd9b",
-"class_mpdf_1_1_mpdf.html#a84d18cc1439b9756ca0d22fbca2c79f1",
-"class_mpdf_1_1_mpdf.html#aa804ea17776e5b849bf5270b7f83a86e",
-"class_mpdf_1_1_mpdf.html#ad546dc96c690a8af0407ced639cfd86f",
-"class_mpdf_1_1_mpdf.html#af88a905898eefbbbe16cc023b4c2c37c",
-"class_mpdf_1_1_otl_dump.html#a5785804c1f2690b1f252d5b097c6329b",
-"class_mpdf_1_1_shaper_1_1_indic.html#a2aa7d67bd072e9a8bc32657cf46a4929",
-"class_mpdf_1_1_shaper_1_1_sea.html#a502140a6aae637519b15df71c54a2f4a",
-"class_mpdf_1_1_t_t_font_file.html#ab4bb7d3b0332c517f6a42a1924f01000",
-"class_mpdf_1_1_tag_1_1_fig_caption.html",
-"class_mpdf_1_1_tag_1_1_text_circle.html#ad122d2f7f53b5a7daf2d9e4c966f87a7",
-"class_mpdf_1_1_ucdn.html#a96222d549e1fcfb4ba05011a34d3a33c",
-"class_psr_1_1_log_1_1_abstract_logger.html#a080c4e103f83f253391f134962c3bb0f",
-"classsetasign_1_1_fpdi_1_1_pdf_parser_1_1_filter_1_1_lzw.html#a7bc9d25a373f0c0b88cfecda04f9cc58",
-"classsetasign_1_1_fpdi_1_1_pdf_reader_1_1_page_boundaries.html#adf7f3b8a8ba0a457e2aeeb162b7245cc",
-"functions_d.html",
-"md__c__xampp_htdocs__p_s_s_k_vendor_mpdf_mpdf__r_e_a_d_m_e.html#autotoc_md2901",
-"subs__core_8php.html"
+"_h_t_m_l_parser_mode_8php.html",
+"_pdf_token_8php.html",
+"_t_head_8php_source.html",
+"class_composer_1_1_autoload_1_1_class_loader.html#a5187f29c880def2863b3592d2cce5844",
+"class_mpdf_1_1_barcode_1_1_imb.html#a830b5c75df72b32396701bc563fbe3c7",
+"class_mpdf_1_1_file_1_1_stream_wrapper_checker.html",
+"class_mpdf_1_1_gif_1_1_file_header.html#a4c6a36422a5a0fb21cf07012219f49af",
+"class_mpdf_1_1_image_1_1_svg.html#a81e7d720b11f43040f43729b73e1eeff",
+"class_mpdf_1_1_mpdf.html#a17d9dfd1196e98b0127089c748ea28a4",
+"class_mpdf_1_1_mpdf.html#a39678d4bee5391694a87448e1f30caa0",
+"class_mpdf_1_1_mpdf.html#a63cef9f669b2db111c9104ffb4739255",
+"class_mpdf_1_1_mpdf.html#a8362fe8e31c378c26e9e3682b8119bb3",
+"class_mpdf_1_1_mpdf.html#aa67bbc736dc036c7653610d7f1edeb2b",
+"class_mpdf_1_1_mpdf.html#ad40cfa9523270e915afdefff76032f3a",
+"class_mpdf_1_1_mpdf.html#af6941efbe55b38291c16ec12bd83e907",
+"class_mpdf_1_1_otl_dump.html#a414ecfdd4dc8a1616215a6b66d5bf483",
+"class_mpdf_1_1_shaper_1_1_indic.html#a1a317b685483ec1bc08cf42a32f9941e",
+"class_mpdf_1_1_shaper_1_1_sea.html#a398a16763ceb48c5b4ccdbf9902065c8",
+"class_mpdf_1_1_t_t_font_file.html#aad6ed949942ae1b51ce0d08e21974d96",
+"class_mpdf_1_1_tag_1_1_dot_tab.html#ad122d2f7f53b5a7daf2d9e4c966f87a7",
+"class_mpdf_1_1_tag_1_1_td.html#af36b35263d5cc53316da359f02adbe14",
+"class_mpdf_1_1_ucdn.html#a8e6c08fc55cab7a6112f8a6f0a9b1dfe",
+"class_mpdf_1_1_writer_1_1_resource_writer.html#a22fd4493135bc130e2ba378f7bea8e48",
+"class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#a7dd626cfe1c29407eb37a713c631b5c7",
+"class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p.html#a0447940c69b2fb0646a3bc2158215ab8",
+"classsetasign_1_1_fpdi_1_1_pdf_parser_1_1_cross_reference_1_1_cross_reference.html#aa5289c072a64edaf676c09abfbc4f12f",
+"classsetasign_1_1_fpdi_1_1_pdf_parser_1_1_type_1_1_pdf_array.html",
+"ctimesi_8php.html#aadd3f841051043ee58e587e840e8dd0b",
+"index_8php.html#a322daae0882425d533b6f662197c1b65",
+"namespace_mpdf_1_1_gif.html",
+"phpmailer_8lang-ch_8php.html#a957c4c5cc80342ca5a19ba145f85daa9",
+"phpmailer_8lang-gl_8php_source.html",
+"phpmailer_8lang-lv_8php.html#afe3883d1634dca642e14d301ffaaa952",
+"phpmailer_8lang-sr_8php.html#a53b73fedc58a3e9084bd6de0f3f1e4e1",
+"subs__core_8php.html#a3001ad6d714caa939671f2954a40c018"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -300,6 +300,15 @@ var annotated_dup =
       [ "TTFontFileAnalysis", "class_mpdf_1_1_t_t_font_file_analysis.html", "class_mpdf_1_1_t_t_font_file_analysis" ],
       [ "Ucdn", "class_mpdf_1_1_ucdn.html", "class_mpdf_1_1_ucdn" ]
     ] ],
+    [ "PHPMailer", "namespace_p_h_p_mailer.html", [
+      [ "PHPMailer", "namespace_p_h_p_mailer_1_1_p_h_p_mailer.html", [
+        [ "Exception", "class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_exception.html", "class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_exception" ],
+        [ "OAuth", "class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth.html", "class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth" ],
+        [ "PHPMailer", "class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html", "class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer" ],
+        [ "POP3", "class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3.html", "class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3" ],
+        [ "SMTP", "class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p.html", "class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p" ]
+      ] ]
+    ] ],
     [ "Psr", null, [
       [ "Log", "namespace_psr_1_1_log.html", [
         [ "Test", "namespace_psr_1_1_log_1_1_test.html", [

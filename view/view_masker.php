@@ -1,6 +1,11 @@
 <?php
+// import module
 require_once "../conn.php";
 require_once "../__function/query_function.php";
+/// style untuk item
+$List_Item = "width: 12.5rem;min-height: 320px;max-height: 400px;overflow: hidden;";
+
+/// query fungsi get_spesific_data() berdasarkan tabel item dengan spesifik id_kategori
 $items = get_spesific_data('item', 'id_kategori', '1');
 ?>
 <div class="list-product-body d-flex flex-row bd-highlight flex-wrap ">

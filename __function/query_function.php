@@ -139,7 +139,7 @@ function hapus_cart($id_customer, $id_item)
         die('Query Error : ' . mysqli_errno($conn) .
             ' - ' . mysqli_error($conn));
     } else {
-        echo "<h2>Berhasil</h2><a href='..\index.php'>login</a>"; // taruh ke session
+        echo "<h2>Berhasil menghapus item</h2><a href='..\index.php'>kembali</a>"; // taruh ke session
     }
 }
 
