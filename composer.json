@@ -1,0 +1,20 @@
+{
+    "name": "rifky/pskk-composer",
+    "description": "penggunaan liblary\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dkomponen liblary php",
+    "type": "project",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "Rifky\\PskkComposer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rifky Akhmad F",
+            "email": "rifkyakhmad911@gmail.com"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "^8.0"
+    }
+}
