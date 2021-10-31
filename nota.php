@@ -1,24 +1,28 @@
 <?php
+// import modul
 require_once __DIR__ . '/vendor/autoload.php';
 require "conn.php";
 require "__function/query_function.php";
 
 session_start();
+
+/// menangkap id customer dari session dijadikan variabel
 $id_user = $_SESSION['id'];
+/// menangkap username customer dari session dijadikan variabel
 $username = $_SESSION['username'];
 
+/// menjalankan query get_spesific_data() untuk mendapatkan data customer
 $user = get_spesific_data('customer', 'username', $username);
+/// menjalankan query belanja() untuk mendapatkan data keranjang customer berupa parameter $id_user
 $items = belanja($id_user);
-$no = 1;
 
 // $_SESSION['history'] = "Keranjang dikosongkan";
 // update_status_cart($id_user, 1);
+/// melakukan deklarasi new class Mpdf() dari package mpdf
 $mpdf = new \Mpdf\Mpdf();
+/// melakukan perekaman halaman
 ob_start();
 ?>
-<!DOCTYPE html>
-<html>
-
 <!DOCTYPE html>
 <html>
 
@@ -29,9 +33,12 @@ ob_start();
 
 <body>
     <div align="center">
-        <h2 align="center">Data Mahasiswa</h2>
-        <div class="row">
-            <?php foreach ($user as $u) : ?>
+        <h2 align="center">Data Belanja Toko Alat Kesehatan</h2>
+        <div class="row" style="display: inline-flex;">
+            <?php /// variabel untuk penomoran yang digunakan pada looping
+            $no = 1;
+            /// melakukan looping yang berisikan data customer
+            foreach ($user as $u) : ?>
                 <div class="col-6">
                     <div class="mb-3">
                         <label for="U_Username" class="form-label"><i class="fas fa-fw fa-user"></i> User ID</label>
@@ -68,9 +75,9 @@ ob_start();
                         <input type="text" class="form-control" id="U_Username" value="metode prepaid/postpaid">
                     </div>
                 </div>
-            <?php endforeach; ?>
+            <?php /// perulangan berakhir
+            endforeach; ?>
         </div>
-        <h2 align="center">Data Belanja</h2>
         <table align="center" style="border: 1px solid black;">
             <thead>
                 <tr>
@@ -81,25 +88,37 @@ ob_start();
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($items as $i) : ?>
+                <?php
+                /// inisialisasi kerangka variabel
+                $total_harga = 0;
+                /// melakukan perulangan untuk mencetak data checkout customer
+                foreach ($items as $i) :
+                ?>
                     <tr>
                         <td><?= $no; ?></td>
                         <td><?= $i['nama'] ?></td>
                         <td><?= $i['jumlah'] ?></td>
                         <td><?= $i['harga'] ?></td>
+                        <?php $total_harga += $i['harga'] ?>
                     </tr>
-                <?php endforeach; ?>
+                <?php /// mengakhiri perulangan
+                endforeach; ?>
             </tbody>
         </table>
+        <b>Total Belanja (*termasuk pajak Rp 2.500): <?= $total_harga = $total_harga + 2500; ?></b>
     </div>
 </body>
 
 </html>
 <?php
-// print menjadi pdf
+/// inisialisasi variabel dari hasil perekaman halaman
 $html = ob_get_contents();
+/// mengakhiri perekaman halaman
 ob_end_clean();
+/// memformat halaman html untuk dijadikan pdf
 $mpdf->WriteHTML(utf8_encode($html));
+/// print menjadi pdf
 $mpdf->Output();
+/// pindah ke menu halaman utama
 header("Location: ../index.php");
 ?>

@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['x_2dcircle_2dfill_2emd_0',['x-circle-fill.md',['../x-circle-fill_8md.html',1,'']]],
+  ['x_2dcircle_2emd_1',['x-circle.md',['../x-circle_8md.html',1,'']]],
+  ['x_2ddiamond_2dfill_2emd_2',['x-diamond-fill.md',['../x-diamond-fill_8md.html',1,'']]],
+  ['x_2ddiamond_2emd_3',['x-diamond.md',['../x-diamond_8md.html',1,'']]],
+  ['x_2dlg_2emd_4',['x-lg.md',['../x-lg_8md.html',1,'']]],
+  ['x_2doctagon_2dfill_2emd_5',['x-octagon-fill.md',['../x-octagon-fill_8md.html',1,'']]],
+  ['x_2doctagon_2emd_6',['x-octagon.md',['../x-octagon_8md.html',1,'']]],
+  ['x_2dsquare_2dfill_2emd_7',['x-square-fill.md',['../x-square-fill_8md.html',1,'']]],
+  ['x_2dsquare_2emd_8',['x-square.md',['../x-square_8md.html',1,'']]],
+  ['x_2emd_9',['x.md',['../x_8md.html',1,'']]],
+  ['x8a_5f_10',['x8a_',['../ru_8php.html#abd58b1ae682867b8890f4f9f5cd69376',1,'ru.php']]],
+  ['xa93e_11',['xa93e',['../sv_8php.html#adaa8b8d4f58699d748b074bceae7304d',1,'sv.php']]],
+  ['xb38w9cza8s_5f_12',['xb38w9cza8s_',['../pl_8php.html#a780a73b96c2f27bc84db45334cb688a4',1,'pl.php']]],
+  ['xba2_13',['xba2',['../es_8php.html#a44c72836fa7cd07f72a77fabf1d346da',1,'es.php']]],
+  ['xml_5fsvg2pdf_5fend_14',['xml_svg2pdf_end',['../class_mpdf_1_1_image_1_1_svg.html#a58e5208275cfba1f2e9f3db552cacba2',1,'Mpdf::Image::Svg']]],
+  ['xml_5fsvg2pdf_5fstart_15',['xml_svg2pdf_start',['../class_mpdf_1_1_image_1_1_svg.html#ae00cefc47a8b1dc1a2441b872a62a5bf',1,'Mpdf::Image::Svg']]],
+  ['xref_5fmissing_16',['XREF_MISSING',['../classsetasign_1_1_fpdi_1_1_pdf_parser_1_1_cross_reference_1_1_cross_reference_exception.html#afcdef61f8c43f9a290eea90f916a765b',1,'setasign::Fpdi::PdfParser::CrossReference::CrossReferenceException']]],
+  ['xyscale_17',['XYSCALE',['../class_mpdf_1_1_fonts_1_1_glyph_operator.html#a9a2d995cced5ff66440cd02c09879a67',1,'Mpdf::Fonts::GlyphOperator']]]
+];

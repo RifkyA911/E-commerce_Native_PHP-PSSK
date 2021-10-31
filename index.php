@@ -1,12 +1,25 @@
 <?php
+
+/**
+ * Setiap halaman membutuhkan modul utama untuk menjalankan fungsi koneksi ke DB dan query function
+ * <pre>require "conn.php";
+ * require "__function/query_function.php";</pre>
+ */
+// import modul
 require "conn.php";
 require "__function/query_function.php";
+/// melakukan fungsi query get_all_data() yang membuat seluruh data dari tabel item
 $items = get_all_data('item');
+/// melakukan fungsi query get_all_data() yang membuat seluruh data dari tabel item_kategori
 $kategori = get_all_data('item_kategori');
-setlocale(LC_MONETARY, 'id_ID');
-
-
+/// inisialisasi session untuk kredensial
 session_start();
+// debug tools
+// // Start the clock time in seconds 
+// $start_time = microtime(true);
+// $val = 1;
+// // memory
+// $big_array = array();
 ?>
 
 <!DOCTYPE html>
@@ -14,13 +27,12 @@ session_start();
 
 <head>
     <title>Home | Toko Sehat</title>
-    <!-- panggil header -->
-    <?php require 'header.php'; ?>
+    <?php /* import module css dan bootsrap */ require 'header.php'; ?>
 </head>
 
 <body style="<?= $Load_BG; ?>">
     <header class="fixed-top shadow-sm">
-        <?php require 'navbar.php' ?>
+        <?php /* import module komponen html navbar*/ require 'navbar.php' ?>
     </header>
     <main class="py-5 my-5" style="<?= $Load_BG; ?>">
         <div class="container mt-5">
@@ -31,7 +43,6 @@ session_start();
                     </ol>
                 </nav>
             </div>
-            <!-- <?php print_r($_SESSION); ?> -->
             <div class="row">
                 <div class="col">
                     <div class="load-content mx-auto d-flex justify-content-between">
@@ -41,7 +52,10 @@ session_start();
                             </div>
                             <div id="ajax_body">
                                 <div class="list-product-body d-flex flex-row bd-highlight flex-wrap ">
-                                    <?php foreach ($items as $i) : ?>
+                                    <?php
+                                    /// melakukan looping untuk menampilkan semua data item dari database
+                                    $no = 0;
+                                    foreach ($items as $i) : ?>
                                         <div class="justify-content-sm-center">
                                             <a href="item.php?id_item=<?= $i['id']; ?>" target="_blank" class="card m-2 shadow-sm text-decoration-none text-dark" style="<?= $List_Item; ?>">
                                                 <img src="public\img\<?= $i['picture'] ?>" class="card-img-top" alt="...">
@@ -54,8 +68,39 @@ session_start();
                                                     </div>
                                                 </div>
                                             </a>
+                                            <?php //$big_array[] = $no;
+                                            //$val++;
+                                            $no++; ?>
                                         </div>
-                                    <?php endforeach; ?>
+                                    <?php
+                                    /// stop looping
+                                    endforeach;
+                                    // echo '<p>After building the array</p>';
+                                    // print_mem();
+
+                                    // unset($big_array);
+
+                                    // echo '<p>After unsetting the array</p>';
+                                    // print_mem();
+                                    // function print_mem()
+                                    // {
+                                    //     /* Currently used memory */
+                                    //     $mem_usage = memory_get_usage();
+
+                                    //     /* Peak memory usage */
+                                    //     $mem_peak = memory_get_peak_usage();
+
+                                    //     echo 'The script is now using: <strong>' . round($mem_usage / 1024) . 'KB</strong> of memory.<br>';
+                                    //     echo 'Peak usage: <strong>' . round($mem_peak / 1024) . 'KB</strong> of memory.<br><br>';
+                                    // }
+                                    // // End the clock time in seconds 
+                                    // $end_time = microtime(true);
+
+                                    // // Calculate the script execution time 
+                                    // $execution_time = ($end_time - $start_time);
+
+                                    // echo " It takes " . $execution_time . " seconds to execute the script";
+                                    ?>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +140,7 @@ session_start();
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#89bd0f" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,160C384,181,480,235,576,234.7C672,235,768,181,864,149.3C960,117,1056,107,1152,122.7C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
     </svg>
-    <?php require 'footer.php'; ?>
+    <?php /* import modul footer dan script */ require 'footer.php'; ?>
 </body>
 
 </html>

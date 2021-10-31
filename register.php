@@ -1,9 +1,13 @@
 <?php
 require "conn.php";
 require "__function/query_function.php";
-$list_provinsi = get_all_data('provinces');
-$list_regencies = get_all_data('regencies');
 session_start();
+
+/// inisialisasi variabel yang memuat fungsi get_all_data() tabel provinsi
+$list_provinsi = get_all_data('provinces');
+/// inisialisasi variabel yang memuat fungsi get_all_data() tabel regencies
+$list_regencies = get_all_data('regencies');
+/// mengecek apakah user sudah login, jika sudah kembalikan ke halaman index.php
 if (isset($_SESSION['username'])) {
     header("Location: index.php");
 }
@@ -14,12 +18,13 @@ if (isset($_SESSION['username'])) {
 
 <head>
     <title>Register | Toko Sehat</title>
-    <!-- panggil header -->
+    <!-- panggil modul header.php -->
     <?php require 'header.php'; ?>
 </head>
 
 <body style="min-height:20vh;">
     <header class="fixed-top shadow-sm">
+        <!-- panggil modul navbar.php -->
         <?php require 'navbar.php' ?>
     </header>
     <main class="py-5 mt-5" style="min-height:20vh;">
@@ -76,7 +81,8 @@ if (isset($_SESSION['username'])) {
                                             <div class="mb-3">
                                                 <label for="U_Kota" class="form-label"><i class="fa fa-fw fa-city"></i> Kota</label>
                                                 <select class="form-select" id="U_Kota" name="kota">
-                                                    <?php foreach ($list_regencies as $lp) : ?>
+                                                    <?php /// menampilkan data regencies/kota yang dipasangkan kedalam elemen select input
+                                                    foreach ($list_regencies as $lp) : ?>
                                                         <option value="<?= $lp['id']; ?>"><?= $lp['name']; ?></option>
                                                     <?php endforeach; ?>
                                                 </select>
@@ -113,6 +119,7 @@ if (isset($_SESSION['username'])) {
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#0099ff" fill-opacity="1" d="M0,64L60,90.7C120,117,240,171,360,186.7C480,203,600,181,720,192C840,203,960,245,1080,224C1200,203,1320,117,1380,74.7L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
     </svg>
+    <!-- panggil modul footer.php -->
     <?php require 'footer.php'; ?>
 </body>
 

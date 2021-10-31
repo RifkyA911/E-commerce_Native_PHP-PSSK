@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['final_5freordering_0',['final_reordering',['../class_mpdf_1_1_shaper_1_1_indic.html#ad0dd93894adb9dc20d95b7c7c9d18fcf',1,'Mpdf\Shaper\Indic\final_reordering()'],['../class_mpdf_1_1_shaper_1_1_sea.html#a9d12f4e8df36993a9835ada60dfe5722',1,'Mpdf\Shaper\Sea\final_reordering()']]],
+  ['final_5freordering_5fsyllable_1',['final_reordering_syllable',['../class_mpdf_1_1_shaper_1_1_indic.html#a7be1c9c0b456b3aa28d4ef7efae30b70',1,'Mpdf\Shaper\Indic\final_reordering_syllable()'],['../class_mpdf_1_1_shaper_1_1_sea.html#a25638e48f9e2cd58769ed543b2d9b150',1,'Mpdf\Shaper\Sea\final_reordering_syllable()']]],
+  ['findfile_2',['findFile',['../class_composer_1_1_autoload_1_1_class_loader.html#a4f8534c9205630e4b9c61e47ebf2867a',1,'Composer::Autoload::ClassLoader']]],
+  ['findfontfile_3',['findFontFile',['../class_mpdf_1_1_fonts_1_1_font_file_finder.html#a29228c2cb15ffaa89d37d5bd76d8ff21',1,'Mpdf::Fonts::FontFileFinder']]],
+  ['findstartxref_4',['findStartXref',['../classsetasign_1_1_fpdi_1_1_pdf_parser_1_1_cross_reference_1_1_cross_reference.html#a7309a7d25038b8e4b8720057316188f2',1,'setasign::Fpdi::PdfParser::CrossReference::CrossReference']]],
+  ['finishflowingblock_5',['finishFlowingBlock',['../class_mpdf_1_1_mpdf.html#a4380dfc5aab1582da02d57f4b7da19f9',1,'Mpdf::Mpdf']]],
+  ['fixcss_6',['fixCSS',['../class_mpdf_1_1_css_manager.html#a22ad54cf44bb0cc1d681e5eff09f9018',1,'Mpdf::CssManager']]],
+  ['fixfaultysubsectionshift_7',['fixFaultySubSectionShift',['../classsetasign_1_1_fpdi_1_1_pdf_parser_1_1_cross_reference_1_1_fixed_reader.html#aabcb6a37c6523bcfc93514439509941d',1,'setasign::Fpdi::PdfParser::CrossReference::FixedReader']]],
+  ['fixlineheight_8',['fixLineheight',['../class_mpdf_1_1_mpdf.html#a2fe1c46db8f1a952d1a9cec84a3654cc',1,'Mpdf::Mpdf']]],
+  ['flag_9',['FLAG',['../class_mpdf_1_1_shaper_1_1_indic.html#aa9d34d63dd081752e97409cf963da142',1,'Mpdf\Shaper\Indic\FLAG()'],['../class_mpdf_1_1_shaper_1_1_myanmar.html#aa9d34d63dd081752e97409cf963da142',1,'Mpdf\Shaper\Myanmar\FLAG($x)']]],
+  ['flag_5frange_10',['FLAG_RANGE',['../class_mpdf_1_1_shaper_1_1_myanmar.html#aa98757cbe388ad7f35d90f745411b71a',1,'Mpdf::Shaper::Myanmar']]],
+  ['fontbyscript_11',['fontByScript',['../class_mpdf_1_1_language_1_1_language_to_font.html#ab6b5415d70f6e90838f18baf9bdd5c90',1,'Mpdf::Language::LanguageToFont']]],
+  ['footer_12',['Footer',['../class_mpdf_1_1_mpdf.html#a2f39533ba0786237090683635ef01c49',1,'Mpdf::Mpdf']]],
+  ['format_13',['format',['../class_mpdf_1_1_utils_1_1_pdf_date.html#af1891bff7812c7a9495b8fb93efc29e0',1,'Mpdf::Utils::PdfDate']]],
+  ['formatclassarr_14',['formatClassArr',['../class_mpdf_1_1_otl_dump.html#ab7200da0952d5bb725b3ef68f6847cda',1,'Mpdf::OtlDump']]],
+  ['formatentity_15',['formatEntity',['../class_mpdf_1_1_otl_dump.html#a63f02b5846922736c96ae6dcd6c1cf3f',1,'Mpdf::OtlDump']]],
+  ['formatentityarr_16',['formatEntityArr',['../class_mpdf_1_1_otl_dump.html#af1ce62a949bbd1b359d4d703b0ef9ff9',1,'Mpdf::OtlDump']]],
+  ['formatentityfirst_17',['formatEntityFirst',['../class_mpdf_1_1_otl_dump.html#a77b713aba129b19952f5c9af0c6933a3',1,'Mpdf::OtlDump']]],
+  ['formatentitystr_18',['formatEntityStr',['../class_mpdf_1_1_otl_dump.html#af6a692bd6c04daa7ea88f9d314d83fc2',1,'Mpdf::OtlDump']]],
+  ['formatuni_19',['formatUni',['../class_mpdf_1_1_otl_dump.html#a2e41fc068dead4621aee80922eb592a3',1,'Mpdf::OtlDump']]],
+  ['formatuniarr_20',['formatUniArr',['../class_mpdf_1_1_otl_dump.html#af601869c0a736a18be4a68e61b6e673b',1,'Mpdf::OtlDump']]],
+  ['formatunistr_21',['formatUniStr',['../class_mpdf_1_1_otl_dump.html#a13508af31c73aec01ffe250c6e71eb5b',1,'Mpdf::OtlDump']]]
+];

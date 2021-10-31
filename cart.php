@@ -1,21 +1,20 @@
 <?php
-// import file
-require "conn.php";
+// import modul
 require "conn.php";
 require "__function/query_function.php";
-require "__function/cart_query.php";
-
-// jika belum melakukan login
 session_start();
+
+/// pengecekan session, jika belum melakukan login maka alihkan ke halaman login.php
 if (isset($_SESSION['username']) == '') {
     echo "<h1>Anda Belum Login</h1>";
     header("Location: login.php");
 }
 
-// panggil fungsi query
+/// inisialisasi variabel dengan value berupa panggil fungsi query get_all_data() dengan parameter nama tabel 'item_kategori'
 $kategori = get_all_data('item_kategori');
+/// inisialisasi variabel yang berisi value 'id' dari session
 $id_user = $_SESSION['id'];
-
+/// inisialisasi variabel yang berisi value dari output fungsi belanja() dengan parameter $id_user 
 $items = belanja($id_user);
 ?>
 
@@ -24,12 +23,13 @@ $items = belanja($id_user);
 
 <head>
     <title>Cart | Toko Sehat</title>
-    <!-- panggil header -->
+    <!-- panggil modul header -->
     <?php require 'header.php'; ?>
 </head>
 
 <body style="<?= $Load_BG; ?>">
     <header class="fixed-top shadow-sm">
+        <!-- panggil modul navbar -->
         <?php require 'navbar.php' ?>
     </header>
     <main class="py-5 my-5" style="<?= $Load_BG; ?>">
@@ -65,10 +65,15 @@ $items = belanja($id_user);
                                                         </tr>
                                                     </thead>
                                                     <!-- memuat tampilan keranjang belanja customer -->
-                                                    <?php if (count($items) > 0) : ?>
+                                                    <?php
+                                                    /// jika isi keranjang terdapat item
+                                                    if (count($items) > 0) : ?>
                                                         <?php
+                                                        /// tambah nilai variabel sebanyak 1 untuk penomoran 
                                                         $no = 1;
+                                                        /// inisialisasi kerangka variabel untuk total harga
                                                         $harga_total = 0;
+                                                        /// perulangan menampilkan data daftar keranjang
                                                         foreach ($items as $i) : ?>
                                                             <?php $harga_total += $i['sub_total_harga'] ?>
                                                             <tbody>
@@ -84,9 +89,17 @@ $items = belanja($id_user);
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
-                                                        <?php $no++;
+                                                        <?php
+                                                            /// tambah nilai variabel sebanyak 1 untuk penomoran 
+                                                            $no++;
+                                                        /// mengakhiri perulangan menampilkan data daftar keranjang
                                                         endforeach;
-                                                    else : $harga_total = 0; ?>
+                                                    /* 
+                                                    *pengecekan jika isi keranjang kosong 
+                                                    */
+                                                    else :
+                                                        /// inisialisasi kerangka variabel untuk total harga
+                                                        $harga_total = 0; ?>
                                                         <tbody>
                                                             <tr>
                                                                 <td>-</td>
@@ -95,14 +108,16 @@ $items = belanja($id_user);
                                                                 <td>-</td>
                                                             </tr>
                                                         </tbody>
-                                                    <?php endif; ?>
+                                                    <?php
+                                                    /// mengakhiri pengecekan isi keranjang
+                                                    endif; ?>
                                                 </table>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col">
-                                                <!-- total akumulasi harga item customer pada keranjang belanja disertai pajak sebesar -->
-                                                <p class="fw-bold">Total Belanja (*termasuk pajak) : Rp <?= number_format($harga_total, 0, ',', '.'); ?>
+                                                <p class="fw-bold">Total Belanja (*termasuk pajak 2500) : Rp <?= ///total akumulasi harga item customer pada keranjang belanja disertai pajak sebesar 
+                                                                                                                number_format($harga_total += 2500, 0, ',', '.'); ?>
                                                 </p>
                                             </div>
                                         </div>

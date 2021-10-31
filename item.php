@@ -1,27 +1,23 @@
 <?php
+// import modul
 require "conn.php";
+require "__function/query_function.php";
 session_start();
 
+/// memeriksa method GET dari item, jika berhasil memasukkan method GET['id_item'] kedalam variabel
 if (isset($_GET['id_item'])) {
     $id_item = $_GET['id_item'];
-    // echo $id_item;
 } else {
     die("<h1>Id Item Tidak berhasil terseleksi</h1>");
 }
 
-$query = "SELECT item.id, item.id_kategori, item.nama, item.harga, item.picture, item.deskripsi, item_kategori.id, item_kategori.kategori FROM item
-INNER JOIN item_kategori ON item.id_kategori = item_kategori.id WHERE item.id=$id_item";
-$result = mysqli_query($conn, $query);
-if (!$result) {
-    die('Query Error : ' . mysqli_errno($conn) .
-        ' - ' . mysqli_error($conn));
-} else {
-    // echo "<h2>Berhasil query</h2>"; // taruh ke session
-}
-
+/// memanggil query function item_detail() untuk menampilkan detail item dari metode GET
+$item_detail = item_detail($id_item);
+/// membuat kerangka array kosong
 $data = [];
 
-list($data['item'], $data['id_kategori'], $data['nama'], $data['harga'], $data['picture'], $data['deskripsi'], $data['kategori_id'], $data['kategori']) = mysqli_fetch_array($result);
+/// memasukan nilai query function item_detail() kedalam list array yang terbagi secara rata berdasarkan parameter
+list($data['item'], $data['id_kategori'], $data['nama'], $data['harga'], $data['picture'], $data['deskripsi'], $data['kategori_id'], $data['kategori']) = mysqli_fetch_array($item_detail);
 
 ?>
 
@@ -30,12 +26,13 @@ list($data['item'], $data['id_kategori'], $data['nama'], $data['harga'], $data['
 
 <head>
     <title>Home | Toko Sehat</title>
-    <!-- panggil header -->
+    <!-- panggil modul header -->
     <?php require 'header.php'; ?>
 </head>
 
 <body style="<?= $Load_BG; ?>">
     <header class="fixed-top shadow-sm">
+        <!-- panggil modul navbar -->
         <?php require 'navbar.php' ?>
     </header>
     <main class="py-5 my-5" style="<?= $Load_BG; ?>">

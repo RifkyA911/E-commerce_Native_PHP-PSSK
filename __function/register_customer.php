@@ -1,8 +1,7 @@
 <?php
+// import modul
 require_once "..\conn.php"; // konek database
 require_once "query_function.php"; // cek session
-
-
 
 // $username = $_POST['username'];
 // $password = $_POST['password'];
@@ -16,7 +15,7 @@ require_once "query_function.php"; // cek session
 // $no_HP = $_POST['kontak'];
 // $paypal_ID = $_POST['paypal'];
 
-// masukan POST kedalam array $data
+/// inisialisasi variabel dengan nilai data inputan dari form register.php dengan metode POST kedalam struktur data bertipe array lalu melakukan pengecekan sql injection
 $data = [
     'username' => mysqli_real_escape_string($conn, $_POST['username']),
     'password' => $_POST['password'],
@@ -31,15 +30,14 @@ $data = [
     'paypal_ID' => mysqli_real_escape_string($conn, $_POST['paypal'])
 ];
 
-// echo $data['password'];
-// if($id_kota)
+/// inisialisasi variabel yang menampung nilai tanggal dan waktu pada saat modul ini dijalankan 
 $date_created = date("Y-m-d H:i:s");
+/// melakukan pengecekan password dan confirm password agar calon customer tidak melakukan kesalahan kedepannya 
 if ($data['password'] === $data['Rpassword']) {
     $password_hashed = password_hash($data['password'], PASSWORD_DEFAULT);
-    // echo $password_hashed;
 } else {
     echo "<h1> Password yang anda masukkan tidak sama !</h1><a href='register.php'>kembali</a>";
 }
-
 // var_dump($data);
+/// melakukan fungsi query register_customer() yang datanya berparameter dari array '$data'
 register_customer($data['username'], $data['email'], $password_hashed, $data['ttl'], $data['alamat'], $data['id_provinsi'], $data['id_kota'], $data['no_HP'], $data['paypal_ID'], $data['gender'], $date_created);

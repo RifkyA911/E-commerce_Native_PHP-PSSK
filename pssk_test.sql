@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 29, 2021 at 03:32 AM
+-- Generation Time: Oct 31, 2021 at 07:04 AM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 8.0.6
 
@@ -70,7 +70,8 @@ CREATE TABLE `customer` (
 
 INSERT INTO `customer` (`id`, `username`, `email`, `password`, `ttl`, `alamat`, `id_provinsi`, `id_kota`, `no_HP`, `paypal_ID`, `gender`, `date_created`, `picture`) VALUES
 (24, 'dodi5', 'rifkxxx@gmail.com', '$2y$10$4l0kFsM.Yj1Mm5Tzi.ej/e/2G7jilOEtkksxu1q2.NRwRY2/20pDm', '2000-02-20', 'Ds. Prayungan 04/02, Kec. Sumberrejo, Bojonegoro, Jawa Timur', 11, 1101, '081228632195', '973A3', 1, '2021-10-28 13:50:01', 'default.jpg'),
-(25, 'andi31', 'andi@gmail.com', '$2y$10$OSpBMq8aALXU27YTdNm7ou/zXTWrya5MdaX1IhePvIyfqQwn5skvC', '2000-02-22', 'Prayungan, Sumberejo, Bojonegoro, Jawa Timur', 11, 1101, '081228632195', '973A3', 1, '2021-10-28 14:12:42', 'default.jpg');
+(25, 'andi31', 'andi@gmail.com', '$2y$10$OSpBMq8aALXU27YTdNm7ou/zXTWrya5MdaX1IhePvIyfqQwn5skvC', '2000-02-22', 'Prayungan, Sumberejo, Bojonegoro, Jawa Timur', 11, 1101, '081228632195', '973A3', 1, '2021-10-28 14:12:42', 'default.jpg'),
+(26, 'bowo21', 'bowo21@gmail.com', '$2y$10$5bPZvyXH/BFvMTfNxXF1xOpRtxrn2h8UPE0x5b9tE3nfb4RT6ccIm', '2000-03-22', 'Prayungan, Sumberejo, Bojonegoro, Jawa Timur', 11, 1173, '081228632195', '973A3', 1, '2021-10-31 03:54:20', 'default.jpg');
 
 -- --------------------------------------------------------
 
@@ -89,6 +90,18 @@ CREATE TABLE `customer_bill` (
   `status` tinyint(4) NOT NULL COMMENT '	1 untuk processing, 2 untuk shipping, -1 untuk canceled by user, -2 untuk canceled by admin'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `customer_bill`
+--
+
+INSERT INTO `customer_bill` (`id`, `id_customer`, `date_created`, `list_id_item`, `total_harga`, `shp_id_provinsi`, `shp_id_kota`, `status`) VALUES
+(15, 26, '2021-10-31 04:48:05', '10;5;', 39900, 11, 1101, 1),
+(16, 26, '2021-10-31 04:49:57', '10;5;5;10;', 79800, 11, 1101, 1),
+(17, 26, '2021-10-31 04:51:12', '10;5;5;10;5;', 94800, 11, 1101, 1),
+(18, 26, '2021-10-31 04:52:16', '10;5;5;10;5;10;7;8;', 228700, 11, 1101, 1),
+(19, 26, '2021-10-31 04:53:20', '10;5;5;10;5;10;7;8;7;5;', 318200, 11, 1101, 1),
+(20, 26, '2021-10-31 04:53:43', '10;5;5;10;5;10;7;8;7;5;', 318200, 11, 1101, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -101,9 +114,42 @@ CREATE TABLE `customer_cart` (
   `id_item` int(11) NOT NULL,
   `jumlah` int(11) NOT NULL,
   `sub_total_harga` int(11) NOT NULL,
-  `status` tinyint(1) NOT NULL,
+  `status` tinyint(1) NOT NULL COMMENT '0:proses, 1:selesai',
   `tgl_input` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `customer_cart`
+--
+
+INSERT INTO `customer_cart` (`id`, `id_customer`, `id_item`, `jumlah`, `sub_total_harga`, `status`, `tgl_input`) VALUES
+(3, 25, 3, 1, 3000, 1, '2021-10-30 07:28:48'),
+(4, 25, 10, 1, 24900, 1, '2021-10-30 07:28:48'),
+(5, 25, 8, 1, 34500, 1, '2021-10-30 07:28:48'),
+(6, 25, 10, 1, 24900, 1, '2021-10-30 07:35:00'),
+(7, 25, 11, 1, 20000, 1, '2021-10-30 07:35:00'),
+(8, 25, 4, 1, 14000, 1, '2021-10-30 07:37:51'),
+(9, 25, 2, 1, 45000, 1, '2021-10-30 07:37:51'),
+(10, 25, 4, 1, 14000, 1, '2021-10-30 07:40:03'),
+(11, 25, 5, 1, 15000, 1, '2021-10-30 07:40:03'),
+(12, 25, 6, 1, 75000, 1, '2021-10-30 07:40:03'),
+(13, 25, 10, 1, 24900, 1, '2021-10-30 07:40:03'),
+(14, 25, 5, 1, 15000, 1, '2021-10-30 07:50:06'),
+(15, 25, 10, 1, 24900, 1, '2021-10-30 07:50:06'),
+(16, 25, 4, 1, 14000, 1, '2021-10-30 07:52:06'),
+(17, 25, 5, 1, 15000, 1, '2021-10-30 07:53:03'),
+(18, 25, 1, 1, 50000, 1, '2021-10-30 07:53:03'),
+(19, 25, 3, 1, 3000, 0, '2021-10-30 13:37:19'),
+(21, 26, 10, 1, 24900, 1, '2021-10-31 03:48:05'),
+(22, 26, 5, 1, 15000, 1, '2021-10-31 03:48:05'),
+(23, 26, 5, 1, 15000, 1, '2021-10-31 03:49:57'),
+(24, 26, 10, 1, 24900, 1, '2021-10-31 03:49:57'),
+(25, 26, 5, 1, 15000, 1, '2021-10-31 03:51:12'),
+(26, 26, 10, 1, 24900, 0, '2021-10-31 03:51:56'),
+(27, 26, 7, 1, 74500, 0, '2021-10-31 03:52:01'),
+(28, 26, 8, 1, 34500, 0, '2021-10-31 03:52:04'),
+(29, 26, 7, 1, 74500, 0, '2021-10-31 03:53:09'),
+(30, 26, 5, 1, 15000, 0, '2021-10-31 03:53:12');
 
 -- --------------------------------------------------------
 
@@ -826,19 +872,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `customer_bill`
 --
 ALTER TABLE `customer_bill`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `customer_cart`
 --
 ALTER TABLE `customer_cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `item`

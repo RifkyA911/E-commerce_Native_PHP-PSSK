@@ -17,8 +17,8 @@
                         </li>
                     </div>
                     <li class="nav-item border-end mx-2"></li>
-                    <!-- apabila user belum melakukan login -->
-                    <?php if (!isset($_SESSION['username'])) : ?>
+                    <?php /// apabila user belum melakukan login  
+                    if (!isset($_SESSION['username'])) : ?>
                         <div class="responsive-navbar-btn">
                             <li class="nav-item mx-2">
                                 <a href="login.php" class="nav-link px-3 btn btn-sm btn-outline-success text-light responsive-navbar-btn">Masuk</a>
@@ -29,8 +29,9 @@
                                 <a href="register.php" class="nav-link px-3 btn btn-sm btn-light text-dark responsive-navbar-btn">Daftar</a>
                             </li>
                         </div>
-                        <!-- apabila user telah melakukan login -->
-                    <?php else : ?>
+                    <?php /// apabila user telah melakukan login 
+                    else :
+                    ?>
                         <div class="responsive-navbar-btn">
                             <li class="nav-item mx-2">
                                 <a href="__function/session_out.php" class="nav-link px-3 btn btn-sm btn-outline-danger text-light responsive-navbar-btn">Keluar</a>

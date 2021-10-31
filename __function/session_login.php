@@ -1,16 +1,16 @@
 <?php
+// import modul
 require_once "..\conn.php";
-
-// ambil data visitor dari input form login
-
-$username = $_POST['username'];
-$password = $_POST['password'];
-// var_dump($data);
-
 // memulai session
 session_start();
 
-// fungsi pengecekan dan validasi visitor pada login sebagai customer
+/// inisialisasi variabel dengan nilai inputan data visitor dari input username form login
+$username = $_POST['username'];
+/// inisialisasi variabel dengan nilai inputan data visitor dari password input form login
+$password = $_POST['password'];
+// var_dump($data);
+
+/// fungsi pengecekan dan validasi visitor pada login sebagai customer
 function get_customer($username, $password)
 {
     global $conn;
@@ -20,12 +20,9 @@ function get_customer($username, $password)
 
     // validasi jika data ditemukan
     if (mysqli_num_rows($result) > 0) {
-        // echo $password_hashed;
-        // echo "<BR>";
-        // echo $password;
 
         if (password_verify($password, $password_hashed)) {
-            echo "<h1>Password Valid</h1>";
+            // echo "<h1>Password Valid</h1>";
             // die;
 
             // membuat session baru
@@ -47,5 +44,5 @@ function get_customer($username, $password)
     }
 }
 
-// panggil fungsi
+/// panggil fungsi query get_customer yang berparameter '($username, $password)'
 get_customer($username, $password);

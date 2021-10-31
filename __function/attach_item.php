@@ -1,34 +1,21 @@
 <?php
+// import modul
 require "../conn.php";
-
+require "query_function.php";
 session_start();
+
+/// inisialisasi variabel yang menampung session value 'id'
 $id = $_SESSION['id'];
+/// inisialisasi variabel yang menampung pengiriman data dengan metode POST berupa 'id_item'
 $id_item = $_POST['id_item'];
+/// inisialisasi variabel yang menampung pengiriman data dengan metode POST berupa 'harga' lalu diubah menjadi integer
 $harga_item = intval($_POST['harga']);
 
-// echo $id_item . "<br>";
-// echo $harga_item . "<br>";
-// echo $id . "<br>";
-
+/// pengecekan jika user belum melakukan login, maka diarahkan ke halaman login.php
 if (isset($_SESSION['id']) == '') {
     echo "<h1>Anda Belum Login</h1>";
     header("Location: login.php");
 }
 
-function add_cart($id_item, $harga_item, $id)
-{
-    global $conn;
-
-    $query = "INSERT INTO `customer_cart` (`id_customer`, `id_item`, `jumlah`, `sub_total_harga`, `status`) VALUES ($id,$id_item,1,$harga_item,0)";
-
-    $result = mysqli_query($conn, $query);
-    if (!$result) {
-        die('Query Error : ' . mysqli_errno($conn) .
-            ' - ' . mysqli_error($conn));
-    } else {
-        $_SESSION['pesan'] = "Berhasil menaruh item ke keranjang"; // taruh ke session
-        header("Location: ../index.php");
-    }
-}
-
+/// melakukan fungsi query add_cart() yang berparameter (id item, harga item, customer id) untuk menampung item kedalam keranjang customer sendiri
 add_cart($id_item, $harga_item, $id);

@@ -1,9 +1,9 @@
 <?php
-// import file
+// import modul
 require "conn.php";
-
-// jika sudah melakukan login
 session_start();
+
+/// pengecekan session, jika sudah melakukan login kembalikan ke halaman index.php
 if (isset($_SESSION['username'])) {
     header("Location: index.php");
 }
